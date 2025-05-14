@@ -4,7 +4,7 @@ import { AuthForm } from "@/components/AuthForm";
 import { useAuth } from "@/contexts/AuthContext";
 import { Navigate } from "react-router-dom";
 
-const Index = () => {
+const Register = () => {
   const { isAuthenticated } = useAuth();
 
   if (isAuthenticated) {
@@ -22,11 +22,11 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <AuthForm type="login" />
+          <AuthForm type="register" />
         </div>
       </AuthLayout>
     </div>
   );
 };
 
-export default Index;
+export default Register;
